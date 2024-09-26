@@ -23,6 +23,65 @@ header {
   position: relative;
 }
 
+/* Style for the container */
+.animated-background {
+  height: 80vh;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("assets/student1.jpg"); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: "Arial", sans-serif;
+  animation: fadeIn 3s ease-in-out;
+}
+.text {
+  color: #14d3da;
+}
+.Text-group {
+  text-align: center;
+}
+
+.animated-background {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.text {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #14d3da;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease forwards;
+}
+
+.text-group p {
+  font-size: 1.2em;
+  color: #555;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease forwards 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 nav {
   position: absolute;
   right: 20px;
@@ -122,7 +181,7 @@ body {
   list-style-type: none;
   padding: 0;
   display: flex;
-  margin-right: 10px;
+  margin-right: 100px;
 }
 
 .navbar-menu li {
@@ -137,6 +196,32 @@ body {
 
 .navbar-menu li a:hover {
   color: #f06;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: white;
+  padding: 10px 15px;
+}
+
+.dropdown-content li a:hover {
+  background-color: white;
 }
 
 .hamburger {
