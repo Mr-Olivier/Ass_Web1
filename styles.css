@@ -23,7 +23,6 @@ header {
   position: relative;
 }
 
-/* Style for the container */
 .animated-background {
   height: 80vh;
   margin-top: 50px;
@@ -32,7 +31,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("assets/student1.jpg"); /* Add your background image here */
+  background-image: url("assets/student1.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
