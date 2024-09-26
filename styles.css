@@ -1,0 +1,284 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Ensures footer stays at the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Navigation styles */
+nav {
+  position: absolute;
+  right: 20px; /* Align navigation to the right */
+  top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #14d3da; /* Yellow hover effect for better contrast */
+}
+
+/* Main content styles */
+main {
+  flex-grow: 1; /* Makes sure main content takes up all available space */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.portfolio-intro {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-intro h1 {
+  font-size: 3rem; /* Increased size for the heading */
+  margin-bottom: 20px;
+}
+
+.portfolio-intro p {
+  font-size: 1.5rem; /* Increased description font size */
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Full width footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 1rem;
+}
+
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-name {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-right: 10px;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-menu li a:hover {
+  color: #f06;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #007bff; /* Blue color */
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Responsive Menu: Hide navbar by default on small screens */
+.navbar-menu {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide the navigation menu on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1001;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active class is added */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on small screens */
+    margin-right: 20px;
+  }
+
+  .navbar-menu li {
+    margin-bottom: 5px;
+  }
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table td {
+  background-color: #f4f4f4;
+}
+
+audio,
+video {
+  display: block;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  margin: 0 5px;
+  color: #fff;
+}
+
+.footer-social a:hover {
+  color: #f06;
+}
+
+/* Media Queries for large screens */
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
