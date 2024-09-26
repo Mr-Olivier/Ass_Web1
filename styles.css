@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Landing Page css */
 body,
 h1,
 h2,
@@ -7,17 +7,15 @@ p {
   padding: 0;
 }
 
-/* Body styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
-  min-height: 100vh; /* Ensures footer stays at the bottom */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header styles */
 header {
   background-color: #333;
   color: white;
@@ -25,10 +23,9 @@ header {
   position: relative;
 }
 
-/* Navigation styles */
 nav {
   position: absolute;
-  right: 20px; /* Align navigation to the right */
+  right: 20px;
   top: 10px;
 }
 
@@ -46,21 +43,20 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #14d3da; /* Yellow hover effect for better contrast */
+  color: #14d3da;
 }
 
-/* Main content styles */
 main {
-  flex-grow: 1; /* Makes sure main content takes up all available space */
+  flex-grow: 1;
   padding: 40px 20px;
   text-align: center;
 }
 
-.portfolio-intro {
+.portifolio-intro {
   background: white;
   padding: 20px;
   margin: 20px auto;
@@ -69,31 +65,31 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-intro h1 {
-  font-size: 3rem; /* Increased size for the heading */
+.portifolio-intro h1 {
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.portfolio-intro p {
-  font-size: 1.5rem; /* Increased description font size */
+.portifolio-intro p {
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #333;
 }
 
-/* Footer styles */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 15px;
-  position: relative;
+  position: 15px;
   bottom: 0;
-  width: 100%; /* Full width footer */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
 }
 
-/* General Styles */
+/* Profile css */
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -105,7 +101,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -120,7 +115,7 @@ body {
 .navbar-name {
   color: #fff;
   font-size: 1.5rem;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navbar-menu {
@@ -144,26 +139,24 @@ body {
   color: #f06;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 1.8rem;
-  color: #007bff; /* Blue color */
+  color: #007bff;
   cursor: pointer;
 }
 
 .hamburger:hover {
-  color: #0056b3; /* Darker blue */
+  color: #0056b3;
 }
 
-/* Responsive Menu: Hide navbar by default on small screens */
 .navbar-menu {
   display: flex;
 }
 
 @media (max-width: 768px) {
   .navbar-menu {
-    display: none; /* Hide the navigation menu on small screens */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -175,11 +168,11 @@ body {
   }
 
   .navbar-menu.active {
-    display: flex; /* Show menu when active class is added */
+    display: flex;
   }
 
   .hamburger {
-    display: block; /* Show hamburger on small screens */
+    display: block;
     margin-right: 20px;
   }
 
@@ -188,8 +181,7 @@ body {
   }
 }
 
-/* Portfolio Grid */
-.portfolio-grid {
+.portifolio-grid {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -197,7 +189,7 @@ body {
 }
 
 .left-column,
-.right-column {
+.right-colmn {
   width: 48%;
 }
 
@@ -214,7 +206,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -224,7 +216,7 @@ table {
 }
 
 table th,
-table td {
+tbody td {
   padding: 10px;
   border: 1px solid #333;
   text-align: left;
@@ -245,7 +237,6 @@ video {
   margin: 15px 0;
 }
 
-/* Footer */
 footer {
   background-color: #222;
   color: #fff;
@@ -275,9 +266,8 @@ footer {
   color: #f06;
 }
 
-/* Media Queries for large screens */
 @media (min-width: 1024px) {
-  .portfolio-grid {
+  .portifolio-grid {
     max-width: 1200px;
     margin: 0 auto;
   }
