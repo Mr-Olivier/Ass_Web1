@@ -11,12 +11,7 @@ How to View the Project
 
 Open the index.html file in your browser to see the landing page.
 From there, you can click on any student's name to view their profile.
+
 Technology Used
 HTML
 CSS
-
-Authors
-
-Olivier
-Mireille
-Vianney
